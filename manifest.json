@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Dark Mode Custom CSS",
+  "version": "1.0.0",
+  "description": "Injects custom CSS into projects.netcentric.biz",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://projects.netcentric.biz/*"],
+      "css": ["custom.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
